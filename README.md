@@ -5,6 +5,15 @@ revenue reporting, customer behaviour and payments.
 
 **Tools:** PostgreSQL, pgAdmin. **Skills shown:** joins, aggregations, CTEs, window functions (LAG, percent-of-total), CASE.
 
+## Dataset
+Olist Brazilian E-Commerce dataset (Kaggle). 5 of the 9 tables are used: customers, orders, order_items, order_payments, products. Currency is Brazilian reais (BRL).
+
+## How to reproduce
+1. Download the dataset from Kaggle
+2. Run `00_create_tables.sql` in PostgreSQL
+3. Import each CSV into its table (header on, UTF8)
+4. Run queries 01 to 08
+   
 ## Metric definitions
 - **Revenue** = sum of item price for delivered orders (excludes freight)
 - **Repeat customer** = customer_unique_id with 2+ delivered orders
