@@ -25,4 +25,4 @@ revenue reporting, customer behaviour and payments.
 ## Data notes
 - Early 2016 months have very low volume and Nov 2016 has no delivered orders, so growth % there is not meaningful
 - Data ends in Aug 2018
-- ______ (add one more thing you noticed)
+- Order counts by payment method add up to 98,659, above the 96,478 delivered orders, because orders paid with more than one method are counted under each.
