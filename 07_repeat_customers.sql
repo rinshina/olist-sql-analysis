@@ -9,6 +9,7 @@ WITH customer_orders AS (
 )
 SELECT CASE WHEN orders = 1 THEN 'one-time' ELSE 'repeat' END AS customer_type,
        COUNT(*) AS customers,
+       ROUND(COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (), 2) AS pct_customers,
        SUM(orders) AS total_orders
 FROM customer_orders
 GROUP BY 1;
