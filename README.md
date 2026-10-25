@@ -18,6 +18,8 @@ Olist Brazilian E-Commerce dataset (Kaggle). 5 of the 9 tables are used: custome
 - **Revenue** = sum of item price for delivered orders (excludes freight)
 - **Repeat customer** = customer_unique_id with 2+ delivered orders
 - **Payment value** includes freight, so it does not match revenue
+- **AOV** = delivered item revenue / number of delivered orders
+- All queries use delivered orders only, except Q5, which covers all statuses
 
 ## Queries and findings
 | # | Question | File | Finding |
