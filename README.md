@@ -7,7 +7,8 @@ revenue reporting, customer behaviour and payments.
 
 **Tools:** PostgreSQL, pgAdmin, Tableau Public. **Skills shown:** joins, aggregations, CTEs, window functions (LAG, percent-of-total), CASE, dashboarding.
 ## Dataset
-Olist Brazilian E-Commerce dataset (Kaggle). 5 of the 9 tables are used: customers, orders, order_items, order_payments, products. Currency is Brazilian reais (BRL).
+Olist Brazilian E-Commerce Public dataset (Kaggle). 5 of the 9 tables are used: customers, orders, order_items, order_payments, products. Currency is Brazilian reais (BRL).
+
 
 ## How to reproduce
 1. Download the dataset from Kaggle
