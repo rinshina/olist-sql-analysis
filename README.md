@@ -3,8 +3,9 @@
 PostgreSQL analysis of the Olist Brazilian e-commerce dataset (~99k orders, 2016-2018):
 revenue reporting, customer behaviour and payments.
 
-**Tools:** PostgreSQL, pgAdmin. **Skills shown:** joins, aggregations, CTEs, window functions (LAG, percent-of-total), CASE.
+**Dashboard:** [Olist E-Commerce Dashboard (Tableau Public)](https://public.tableau.com/app/profile/rinshina.febin.k/viz/OlistE-CommerceDashboard_17929879126060/OlistE-CommerceRevenueGrowthDrivenbyOrderVolume)
 
+**Tools:** PostgreSQL, pgAdmin, Tableau Public. **Skills shown:** joins, aggregations, CTEs, window functions (LAG, percent-of-total), CASE, dashboarding.
 ## Dataset
 Olist Brazilian E-Commerce dataset (Kaggle). 5 of the 9 tables are used: customers, orders, order_items, order_payments, products. Currency is Brazilian reais (BRL).
 
