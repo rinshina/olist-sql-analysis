@@ -6,6 +6,8 @@ revenue reporting, customer behaviour and payments.
 **Dashboard:** [Olist E-Commerce Dashboard (Tableau Public)](https://public.tableau.com/app/profile/rinshina.febin.k/viz/OlistE-CommerceDashboard_17929879126060/OlistE-CommerceRevenueGrowthDrivenbyOrderVolume)
 
 **Tools:** PostgreSQL, pgAdmin, Tableau Public. **Skills shown:** joins, aggregations, CTEs, window functions (LAG, percent-of-total), CASE, dashboarding.
+**Dashboard data:** results of `04_aov_by_month.sql` and `06_revenue_by_state.sql`, exported as CSV and loaded into Tableau Public.
+
 ## Dataset
 Olist Brazilian E-Commerce Public dataset (Kaggle). 5 of the 9 tables are used: customers, orders, order_items, order_payments, products. Currency is Brazilian reais (BRL).
 
@@ -28,7 +30,7 @@ Olist Brazilian E-Commerce Public dataset (Kaggle). 5 of the 9 tables are used: 
 |---|---|---|---|
 | 1 | Monthly revenue | 01_monthly_revenue.sql | Revenue grew from 111,798 in Jan 2017 to 924,645 in Jan 2018 (about 8x, from a small base). Through 2018 it plateaued between roughly 826k and 978k a month. The peak month was Nov 2017 (987,765), likely Black Friday. |
 | 2 | Month-over-month growth | 02_mom_growth.sql | Excluding low-volume 2016, the biggest rise was +109.5% in Feb 2017 (small base) and the biggest fall -26.5% in Dec 2017, after the Nov spike. In 2018, growth faded from +15.4% in Mar to +0.4% in May, then turned negative in Jun (-12.4%). |
-| 3 | Top 10 categories by revenue | 03_top_categories.sql | Health & beauty is the top category at 1,233,132 in delivered item revenue, followed by watches & gifts (1,166,177) and bed/bath/table home textiles (1,023,435). The top 10 categories together bring in 62.4% of total revenue(13.2M), and the top 3 about a quarter, so revenue is spread across several categories, not dependent on one. |
+| 3 | Top 10 categories by revenue | 03_top_categories.sql | Health & beauty is the top category at 1,233,132 in delivered item revenue, followed by watches & gifts (1,166,177) and bed/bath/table home textiles (1,023,435). The top 10 categories together bring in 62.4% of total revenue (13.2M), and the top 3 about a quarter, so revenue is spread across several categories, not dependent on one. |
 | 4 | Average order value by month | 04_aov_by_month.sql | From Feb 2017 on, AOV stayed steady between 124 and 148, while monthly orders grew from 1,653 (Feb 2017) to 7,289 (Nov 2017, a one-month spike) and then held around 6,000 to 7,100 through 2018. Revenue growth came mainly from more orders, not bigger baskets, and the 2018 plateau reflects orders levelling off. |
 | 5 | Orders by status | 05_orders_by_status.sql | Only about 1.2% of orders were canceled or unavailable. Filtering the other queries to delivered orders drops about 3% of orders, so those figures cover nearly the whole dataset. |
 | 6 | Revenue by state | 06_revenue_by_state.sql | Revenue is concentrated: São Paulo alone brings in about 38% of delivered revenue (5.07M), and SP, RJ and MG together about 63%. The top 10 states account for roughly 88%. SP leads on order volume (40,501 orders) but has the lowest revenue per order of the top three (about 125 vs 137 to 142). |
